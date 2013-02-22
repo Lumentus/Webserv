@@ -5,8 +5,8 @@
 ## Debug
 ProjectName            :=Webserver
 ConfigurationName      :=Debug
-WorkspacePath          := "C:\Users\Lumentus\Projects\Webserv"
-ProjectPath            := "C:\Users\Lumentus\Projects\Webserv"
+WorkspacePath          := "C:\Users\Lumentus\Projects\Webserver"
+ProjectPath            := "C:\Users\Lumentus\Projects\Webserver"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
@@ -87,7 +87,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/main$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Lumentus/Projects/Webserv/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Lumentus/Projects/Webserver/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main$(DependSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main$(ObjectSuffix) -MF$(IntermediateDirectory)/main$(DependSuffix) -MM "main.cpp"
 

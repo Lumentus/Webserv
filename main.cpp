@@ -1,17 +1,12 @@
-#include <stdio.h>
+#include <iostream>
+#include <string>
 
-class Test
-{
-public:
-	void test()
-	{
-		printf("TEST!");
-	}
-}
+using namespace std;
 
 int main(int argc, char **argv)
 {
-	printf("hello world\n");
+	string test = "test";
+	cout << test;
 	while(1);
 	return 0;
 }
